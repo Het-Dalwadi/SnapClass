@@ -1,13 +1,40 @@
+# Environment variables and secrets
 .env
-.vscode
+.env.*
+!.env.example
+.streamlit/secrets.toml
+secrets.toml
+*secret*
+*credentials*
 
-
-*.pyc
-.Ds_store
-__pycache__/
-
+# Virtual environments
 venv/
+.venv/
+env/
 
-.streamlet/
+# Python cache
+__pycache__/
+*.py[cod]
 
+# Editor settings
+.vscode/
+
+# Streamlit configuration and secrets
+.streamlit/
+
+# Build files
 dist/
+build/
+*.egg-info/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
